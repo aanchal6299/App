@@ -72,7 +72,7 @@
 
         <meta-data
             android:name="com.google.android.places.API_KEY"
-            android:value="AIzaSyCJLAzFVkNk-9Z1kzjsbWoOtpWyByun0vA" />
+            android:value="YOUR_API_KEY_VALUE" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
