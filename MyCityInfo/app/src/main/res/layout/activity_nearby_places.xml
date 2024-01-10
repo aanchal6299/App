@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".NearbyPlaces">
+
+    <!-- Heading with Image -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explore Nearby Places"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp"/>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/headerImage"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/nearby"
+            android:contentDescription="Header Image" />
+
+    </LinearLayout>
+
+    <!-- Options -->
+    <LinearLayout
+        android:id="@+id/optionsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerLayout"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Option 1 -->
+        <Button
+            android:id="@+id/restaurantsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_background"
+            android:padding="16dp"
+            android:text="Near By Restaurants"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <!-- Option 2 -->
+        <Button
+            android:id="@+id/hospitalsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_background"
+            android:padding="16dp"
+            android:text="Near By Hospitals"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <!-- Option 3 -->
+        <Button
+            android:id="@+id/banksButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_background"
+            android:padding="16dp"
+            android:text="Near By Banks"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <!-- Option 4 -->
+        <Button
+            android:id="@+id/collegesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_background"
+            android:padding="16dp"
+            android:text="Near By Colleges"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <!-- Option 5 -->
+        <Button
+            android:id="@+id/more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_background"
+            android:padding="16dp"
+            android:text="More Places"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>
