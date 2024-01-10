@@ -1,0 +1,14 @@
+<!-- Replace this with your actual layout for TransportActivity -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- Add your UI components here -->
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/restaurant">
+    </WebView>
+
+</RelativeLayout>

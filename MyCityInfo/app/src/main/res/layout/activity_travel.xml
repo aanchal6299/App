@@ -1,0 +1,56 @@
+<!-- res/layout/activity_find_routes.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp"
+    tools:context=".Travel">
+
+    <ImageView
+        android:id="@+id/travelImage"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/travel"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:textColor="@color/black"
+        android:id="@+id/sourceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/travelImage"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Source"
+        android:inputType="text"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:textColor="@color/black"
+        android:id="@+id/destinationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sourceEditText"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Destination"
+        android:inputType="text"
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:id="@+id/findRoutesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/destinationEditText"
+        android:layout_marginTop="16dp"
+        android:text="Find Routes" />
+
+    <Button
+        android:id="@+id/flight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/findRoutesButton"
+        android:layout_marginTop="16dp"
+        android:text="Find Flights" />
+
+</RelativeLayout>

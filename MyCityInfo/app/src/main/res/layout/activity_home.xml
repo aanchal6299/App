@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Home">
+
+    <!-- Header TextView -->
+    <TextView
+        android:id="@+id/headerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Explore Options"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true" />
+
+    <!-- City Name TextView -->
+    <TextView
+        android:id="@+id/cityNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerTextView"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Weather Info -->
+    <TextView
+        android:id="@+id/weatherInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityNameTextView"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Weather Icons -->
+    <ImageView
+        android:id="@+id/sunnyIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/sunny_icon"
+        android:layout_below="@id/weatherInfoTextView"
+        android:layout_marginTop="17dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/rainyIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/rainy_icon"
+        android:layout_below="@id/weatherInfoTextView"
+        android:layout_marginTop="17dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/cloudyIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/cloudy_icon"
+        android:layout_below="@id/weatherInfoTextView"
+        android:layout_marginTop="17dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/exhaust_cloud"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/exhaust_cloud"
+        android:layout_below="@id/weatherInfoTextView"
+        android:layout_marginTop="17dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+    <!-- Buttons -->
+
+
+    <Button
+        android:id="@+id/nearBy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="270dp"
+        android:background="@drawable/button_background"
+        android:padding="16dp"
+        android:text="Nearby Places " />
+
+    <Button
+        android:id="@+id/hotels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hotels"
+        android:layout_below="@id/nearBy"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_background" />
+
+    <Button
+        android:id="@+id/police"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Police Stations"
+        android:layout_below="@id/hotels"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_background" />
+
+    <Button
+        android:id="@+id/travel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Travel"
+        android:layout_below="@id/police"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_background" />
+
+
+    <Button
+        android:id="@+id/emergency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Emergency Contacts"
+        android:layout_below="@id/travel"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_background" />
+</RelativeLayout>
